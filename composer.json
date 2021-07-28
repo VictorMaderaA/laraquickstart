@@ -1,0 +1,20 @@
+{
+    "name": "victormaderaa/laraquickstart",
+    "description": "Utilities for starting to develop a laravel proyect",
+    "require": {
+        "laravel/framework": "^8.40",
+        "spatie/laravel-query-builder": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "VictorMaderaA",
+            "email": "victor.madera.a@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VictorMaderaA\\LaraQuickStart\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
