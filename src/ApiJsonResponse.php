@@ -11,7 +11,7 @@ class ApiJsonResponse
 
     public static function laraApiResponse($data, int $statusCode = 200, bool $ok = true, string $message = 'ok'): JsonResponse
     {
-        return response()->json(self::buildResponse($data, $statusCode, $ok, $message), $statusCode);
+        return response()->json(static::buildResponse($data, $statusCode, $ok, $message), $statusCode);
     }
 
     public static function buildResponse($data, int $statusCode = 200, bool $ok = true, string $message = 'ok'): array

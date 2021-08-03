@@ -26,7 +26,7 @@ class AdminApiModelController extends Controller
 
     public static function adminIndex(Request $request, AbstractModel $model): JsonResponse
     {
-        $query = self::getFilteredQueryBuilder($request, $model);
+        $query = static::getFilteredQueryBuilder($request, $model);
         $resources = AbstractModel::paginateQuery($query, $request);
         return ApiJsonResponse::laraApiResponse($resources);
     }
@@ -43,7 +43,7 @@ class AdminApiModelController extends Controller
 
     public static function adminShow(Request $request, AbstractModel $model): JsonResponse
     {
-        $query = self::getFilteredQueryBuilder($request, $model);
+        $query = static::getFilteredQueryBuilder($request, $model);
         return ApiJsonResponse::laraApiResponse($query->find($model->getKey()));
     }
 
