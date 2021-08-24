@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
-use InTable\QueryFilters\IQueryFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 
 abstract class AbstractModel extends Model
